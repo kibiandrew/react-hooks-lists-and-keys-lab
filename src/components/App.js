@@ -7,9 +7,9 @@ import user from "../data/user";
 
 function App() {
   return (
-    <div>
+    <div>                      
       <NavBar />
-      <Home username={user.name} city={user.city} color={user.color} />
+      <Home username={user.name} city={user.city} color={user.color} />  
       <About bio={user.bio} links={user.links} />
       <ProjectList projects={user.projects} />
     </div>
@@ -17,3 +17,4 @@ function App() {
 }
 
 export default App;
+//the use of props ensures we are able to pass the data
